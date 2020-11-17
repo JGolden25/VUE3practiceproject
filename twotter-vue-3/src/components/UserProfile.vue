@@ -95,15 +95,14 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .user-profile {
     display: grid;
     grid-template-columns: 1fr 3fr;
     width: 100%;
     padding: 50px 5%;
-}
 
-.user-profile_user-panel {
+    .user-profile_user-panel {
     display: flex;
     flex-direction: column;
     margin-right: 50px;
@@ -111,16 +110,30 @@ export default {
     background-color: white;
     border-radius: 5px;
     border: 1px solid #DFE3E8;
-}
 
-.user-profile_admin-badge {
+    h1 {
+    margin: 0;
+}
+    
+    .user-profile_admin-badge {
     background: rgb(122, 194, 236);
     color: white;
     border-radius: 5px;
     margin-right: auto;
+
+}
+    }
+
+    .user-profile_create-twoot {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
 }
 
-h1 {
-    margin: 0;
+.user-profile_twoots-wrapper {
+    display: grid;
+    grid-gap: 10px;
 }
+
 </style>
